@@ -2,32 +2,27 @@
 <?xml-stylesheet type="text/css" href="hw2.css"?>
 <books>
    <book page = "134">
-    <department></department>
-      <book_title>Introduction to HTML</book_title>
+     <book_title>Introduction to HTML</book_title>
 	  <author>Joseph Gardner</author>
 	  <publisher>Press &#169;</publisher> <!--"Books are being donated by instructors and publishers"-->
    </book>
    <book page = "144">
-    <department></department>
-      <book_title>Networking Infrastructure</book_title>
+     <book_title>Networking Infrastructure</book_title>
 	  <author>Adam Douglas &amp; Janice Dall</author>
 	  <publisher>Cengage; &#169;</publisher> <!--"Books are being donated by instructors and publishers"-->
    </book>
    <book page = "154">
-    <department></department>
-      <book_title>Soft Skills in IT</book_title>
+     <book_title>Soft Skills in IT</book_title>
 	  <author>Mark Hunter</author>
 	  <publisher>Bolding Publisher &#169;</publisher> <!--"Books are being donated by instructors and publishers"-->
    </book>
    <book page = "164">
-    <department></department>
-      <book_title>Network Security</book_title>
+     <book_title>Network Security</book_title>
 	  <author>Jennifer Starter &amp; Yuri Adantov</author>
 	  <publisher>Wrox &#169;</publisher> <!--"Books are being donated by instructors and publishers"-->
    </book>
    <book page = "174">
-    <department></department>
-      <book_title>XML &amp; JSON</book_title>
+     <book_title>XML &amp; JSON</book_title>
 	  <author>Stuart Bell</author>
 	  <publisher>Cengage; &#169;</publisher> <!--"Books are being donated by instructors and publishers"-->
    </book>
