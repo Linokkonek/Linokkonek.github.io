@@ -1,0 +1,5 @@
+books{background-color:#d3d3d3;}
+book, author, publisher {display: block;}
+book_title{font-weight: bold; color: red;}
+book:nth-child(odd) {background:#d8ecf3;}
+book:nth-child(even) {background: white;}
