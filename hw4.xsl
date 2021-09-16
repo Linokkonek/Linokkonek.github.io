@@ -7,8 +7,8 @@
  
   <body>
    <h1>ABC Financial Startup</h1>
-   <center><img src="financialstartup.jpg" alt="Financial startup logo" width="230" height="142" style="float:center; margin-right: 10px;"/></center>
-    
+   <img src="financialstartup.jpg" alt="Financial startup logo" width="230" height="142" style="display:block; margin-left:auto; margin-right:auto;"/>
+   
     <p> We are very young financial manager company and we are proud of our clients</p>
 	<p>We have started with 1 client a little bit more then 10 years ago and now we have 
 	  <xsl:value-of select="count(Accounts/Client)"/><xsl:text> clients!</xsl:text></p>
