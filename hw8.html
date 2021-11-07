@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang = "en">
+    
+    <head>
+        <meta charset="utf-8">
+		<title> XQuery </title>
+		<meta name="description" content= "This page is about XQuery and XQIB">
+		<style>
+		body {
+  background-color: lightblue;
+}
+
+h1 {
+  color: #000053;
+  text-align: center;
+}
+h2,h3 {
+  color: #000053;
+  
+}
+
+table, th, td {
+  border: 1px solid black;
+}
+
+p {
+  font-family: verdana;
+  font-size: 20px;
+}
+</style>
+	</head>
+    <body>
+	<header>
+	
+	
+<h1> XQuery and XQIB and What do they do if applied on XML? </h1>
+    
+</header> <section> 
+<h2> XQuery and its main characteristic </h2>
+<p> The short and the most precise way to characterize XQuery would be to say 
+  - XQuery is to XML what SQL is to databases. It is designed to query XML data 
+  and you can use XQuery to generate summary reports, transform XML data to HTML 
+  or search web documents for relevant information. It also could be used for pulling data from databases to be used for the application integration and splitting up an XML document that represents multiple transactions into multiple XML documents.Very powerful  and convenient!
+</p>
+<p>XQuery 3.1 became a W3C Recommendation on March 21, 2017 and XQuery 3.0 adds support for full functional programming, in that functions are values that can be manipulated (stored in variables, passed to higher-order functions, and dynamically called).</p>
+
+<hr>
+<h2> Learn by Example</h2>
+<table>
+  <tr> 
+    <th> XQuery </th>
+    <th> What you will get in XML</th>
+    <th> Explanations</th>
+  </tr>
+  <tr> 
+    <td> 
+      <p>xquery version &quot;1.0&quot;; </p>
+      <p>for $b in<br>
+        doc(&quot;hw8.xml&quot;)/bookstore/book<br>
+        <br>
+        where <br>
+        $b/price &lt; 30</p>
+      <p>return $b/title</p>
+    </td>
+    <td> 
+      <p>&lt;title lang=&quot;en&quot;&gt;Harry Potter&lt;/title&gt;</p>
+      <p>&lt;title lang=&quot;en&quot;&gt;The Snowy Days&lt;/title&gt;</p>
+    </td>
+    <td> 
+      <p><b>xquery version &quot;1.0&quot;<i> </i></b>is a version declaration 
+        . <b>The doc() function </b>you see in the example shown <br>
+        here, is used to open the <b>hw8.xml</b> file. The <b>for clause </b>binds 
+        a variable &mdash; the<b> $b</b> variable &mdash; to each item returned 
+        <br>
+        by the <b>in</b> expression. The <b>where clause</b> is used to specify 
+        one or more criteria for the result as a filter. And in this example we 
+        will pull books which cost less then $30. Then, you <br>
+        see a path expression that is used by XQuery to navigate through elements 
+        in an XML document &mdash; the path <br>
+        expression<b> /bookstore/book</b> selects the book element using /bookstore 
+        followed by /book that selects all the book <br>
+        elements that are children of the bookstore element. <br>
+        And Return will define what to be returned. In our case <b>return $b/title 
+        </b>it will be the title of the book.</p>
+    </td>
+  </tr>
+</table>
+<hr>
+<h2> XQIB and how it can be used in XQuery</h2>
+<p>Although I could not find the exact meaning of what is XQIB, but it allows 
+  you to program client-side Web applications with XQuery instead of, or as a 
+  complement to JavaScript. It works in most modern browsers (IE9, Firefox 3.6+, 
+  Chrome 8+, Safari 5) and does not require the installation of any plugin.</p>
+<p>XQuery is a W3C standard, just like HTML and XML, and is perfectly tailored 
+  for working with HTML, XML and REST. This means more elegant programs and less 
+  code. Moreover, by using an XQuery Web application server (such as MarkLogic 
+  or Sausalito) in conjunction with XQIB, having the same language on both the 
+  server and the client side allows you to reuse your code.</p>
+<hr>
+<h3>References</h3>
+<ul>
+  <li> <a  href = "https://www.tutorialspoint.com/xquery/xquery_quick_guide.htm">XQuery 
+    - Quick Guide </a> 
+  <li> <a  href = "http://www.xqib.org/index.php" > XQIB</a> 
+  <li> <a  href = "https://websci.informatik.uni-freiburg.de/teaching/ws201112/xmldb/sheets/xqib-documentation.pdf" >XQIB-documentation 
+    </a> 
+  <li> <a  href = "https://www.w3schools.com/xml/xquery_intro.asp" > W3S schools 
+    XQuery tutorial </a>
+	<li> <a  href = "https://en.wikipedia.org/wiki/XQuery" > Wikipedia</a> 
+</ul>
+</section> 
+</body>
+</html>
+ 
