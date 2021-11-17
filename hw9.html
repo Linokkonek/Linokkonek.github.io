@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Inserting SVG Inline for HW9</title>
+<meta charset="utf-8">
+<meta name="description" content="working with inline SVG in the HTML">
+<style>
+   svg { display: block; width: 500px; height: 210px; margin: auto; border: thick double purple; }
+   body { font-family: Verdana, sans-serif; }
+   h1,p { text-align: center; }
+   circle { fill: blue; stroke: red; stroke-width: 5; }
+   rect{ fill: yellow; stroke: blue; stroke-width: 5;fill-opacity:0.1;stroke-opacity:0.9; }
+   polygon{ fill:lime;stroke:purple;stroke-width:5;fill:url(#LGx); }
+</style>
+</head>
+<body>
+<h1>SVG Files in CNIT 131A </h1>
+<p>This is my Homework 9 and I am presenting 3 objects here as requested </p>
+
+<!--<?xml version="1.0" encoding="UTF-8"?>-->
+<svg version="1.1" baseProfile="full" xmlns="http://www.w3.org/2000/svg"
+ width="500" height="310">
+<title>SVG Rectangle</title >
+  <rect x="180" y="40" width="250" height="100" />
+</svg> 
+
+<!--<?xml version="1.0" encoding="UTF-8"?>-->
+<svg version="1.1" baseProfile="full" xmlns="http://www.w3.org/2000/svg"
+  width="500px" height="250px">
+   <title>SVG Circle</title>
+   <circle cx="310" cy="70" r="40" />
+   </svg>
+   
+<!--<?xml version="1.0" encoding="UTF-8"?>-->
+<svg version="1.1" baseProfile="full" xmlns="http://www.w3.org/2000/svg"
+height="210" width="800">
+<title>SVG star</title>
+<defs>
+   <linearGradient id="LGx">
+      <stop offset = "0%" stop-color = "yellow" />
+	  <stop offset = "100%" stop-color = "purple" />
+   </linearGradient>
+</defs>
+  <polygon points="100,10 40,198 190,78 10,78 160,198" />
+ </svg> 
+ 
+ </body>
+</html>
+ 
